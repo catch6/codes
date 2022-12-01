@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author Catch
  * @since 2022-04-19
  */
-public class DynamicArrayList<E> {
+public class DynamicArrayList<E> implements ArrayList<E> {
 
     // 元素数组
     private Object[] elements;
@@ -36,7 +36,7 @@ public class DynamicArrayList<E> {
         }
     }
 
-    public DynamicArrayList(DynamicArrayList<E> arrayList) {
+    public DynamicArrayList(ArrayList<E> arrayList) {
         Object[] array = arrayList.toArray();
         if (array.length != 0) {
             elements = Arrays.copyOf(array, array.length);
@@ -44,6 +44,14 @@ public class DynamicArrayList<E> {
             elements = EMPTY;
         }
         size = array.length;
+    }
+
+    public int size() {
+        return size;
+    }
+
+    public Object[] toArray() {
+        return Arrays.copyOf(elements, size);
     }
 
     /**
@@ -82,6 +90,32 @@ public class DynamicArrayList<E> {
         size--;
         System.arraycopy(elements, index + 1, elements, index, size - index);
         elements[size] = null;
+    }
+
+    @Override
+    public int remove(E element) {
+        int count = 0, ptr = 0;
+        Object[] newElements = new Object[size];
+        if (element == null) {
+            for (int i = 0; i < size; i++) {
+                if (elements[i] == null) {
+                    count++;
+                } else {
+                    newElements[ptr++] = elements[i];
+                }
+            }
+        } else {
+            for (int i = 0; i < size; i++) {
+                if (element.equals(elements[i])) {
+                    count++;
+                } else {
+                    newElements[ptr++] = elements[i];
+                }
+            }
+        }
+        elements = newElements;
+        size = ptr;
+        return count;
     }
 
     @SuppressWarnings("unchecked")
@@ -132,14 +166,6 @@ public class DynamicArrayList<E> {
         return -1;
     }
 
-    public int size() {
-        return size;
-    }
-
-    public Object[] toArray() {
-        return Arrays.copyOf(elements, size);
-    }
-
     /**
      * 检查下标是否在合理范围
      *
@@ -174,10 +200,10 @@ public class DynamicArrayList<E> {
     @Override
     public String toString() {
         return "ArrayList{" +
-                "elements=" + Arrays.toString(elements) +
-                ", capacity=" + elements.length +
-                ", size=" + size +
-                '}';
+            "elements=" + Arrays.toString(elements) +
+            ", capacity=" + elements.length +
+            ", size=" + size +
+            '}';
     }
 
 }

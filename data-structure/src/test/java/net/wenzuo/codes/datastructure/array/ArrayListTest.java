@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  */
 class ArrayListTest {
 
-    DynamicArrayList<Integer> arr;
+    ArrayList<Integer> arr;
 
     @BeforeEach
     void beforeEach() {
