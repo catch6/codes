@@ -11,10 +11,17 @@
 
     <artifactId>algorithm</artifactId>
 
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.9.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
