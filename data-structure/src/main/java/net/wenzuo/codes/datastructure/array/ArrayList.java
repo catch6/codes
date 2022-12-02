@@ -85,4 +85,9 @@ public interface ArrayList<E> {
      */
     int lastIndexOf(E element);
 
+    /**
+     * 清空数组
+     */
+    void clear();
+
 }

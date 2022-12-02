@@ -4,11 +4,10 @@ package net.wenzuo.codes.algorithm.sort;
  * @author Catch
  * @since 2022-06-20
  */
-class BubbleSortTest implements SortTest {
+class BubbleSortTest extends AbstractSortTest {
 
-    @Override
-    public Sort getInstance() {
-        return new BubbleSort();
+    public BubbleSortTest() {
+        sort = new BubbleSort();
     }
 
 }

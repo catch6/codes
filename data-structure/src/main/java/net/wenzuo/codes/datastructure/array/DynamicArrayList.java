@@ -166,6 +166,12 @@ public class DynamicArrayList<E> implements ArrayList<E> {
         return -1;
     }
 
+    @Override
+    public void clear() {
+        elements = EMPTY;
+        size = 0;
+    }
+
     /**
      * 检查下标是否在合理范围
      *

@@ -4,11 +4,10 @@ package net.wenzuo.codes.algorithm.sort;
  * @author Catch
  * @since 2022-06-22
  */
-class SelectionSortTest implements SortTest {
+class SelectionSortTest extends AbstractSortTest {
 
-    @Override
-    public Sort getInstance() {
-        return new SelectionSort();
+    public SelectionSortTest() {
+        sort = new SelectionSort();
     }
 
 }
