@@ -9,9 +9,9 @@ import java.util.Arrays;
  * @author Catch
  * @since 2022-04-26
  */
-class No1Test {
+abstract class AbstractNo1Test {
 
-    private final No1 no1 = new No1();
+    No1 no1;
 
     @Test
     void twoSum1() {
