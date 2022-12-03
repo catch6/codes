@@ -14,7 +14,7 @@ abstract class AbstractArrayListTest {
     ArrayList<Integer> arrayList;
 
     @Test
-    public void size1() {
+    void size1() {
         arrayList.clear();
         Assertions.assertEquals(0, arrayList.size());
     }
