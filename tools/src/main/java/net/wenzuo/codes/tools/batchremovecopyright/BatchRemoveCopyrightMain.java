@@ -13,7 +13,7 @@ import java.util.List;
 public class BatchRemoveCopyrightMain {
 
     public static void main(String[] args) {
-        String path = "/Users/zhanghao/Projects/IdeaProjects/codes/tools/src";
+        String path = "~/Projects/IdeaProjects/codes/tools/src";
         batchRemove(path);
     }
 
