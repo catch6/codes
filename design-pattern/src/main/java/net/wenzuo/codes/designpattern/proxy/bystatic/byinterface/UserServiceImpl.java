@@ -1,4 +1,4 @@
-package net.wenzuo.codes.designpattern.proxy.byextends;
+package net.wenzuo.codes.designpattern.proxy.bystatic.byinterface;
 
 /**
  * @author Catch

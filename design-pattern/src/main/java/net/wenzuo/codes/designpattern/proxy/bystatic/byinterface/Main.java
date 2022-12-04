@@ -1,4 +1,4 @@
-package net.wenzuo.codes.designpattern.proxy.byextends;
+package net.wenzuo.codes.designpattern.proxy.bystatic.byinterface;
 
 /**
  * @author Catch
@@ -7,7 +7,7 @@ package net.wenzuo.codes.designpattern.proxy.byextends;
 public class Main {
 
     public static void main(String[] args) {
-        UserService userService = new UserServiceProxy();
+        UserService userService = new UserServiceProxy(new UserServiceImpl());
         boolean result = userService.login("admin", "admin");
         System.out.println("login result: " + result);
     }

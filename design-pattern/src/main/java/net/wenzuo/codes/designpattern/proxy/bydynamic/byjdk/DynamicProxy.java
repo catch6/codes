@@ -1,4 +1,4 @@
-package net.wenzuo.codes.designpattern.proxy.dynamic;
+package net.wenzuo.codes.designpattern.proxy.bydynamic.byjdk;
 
 import java.lang.reflect.Proxy;
 

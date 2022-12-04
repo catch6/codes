@@ -1,4 +1,4 @@
-package net.wenzuo.codes.designpattern.proxy.dynamic;
+package net.wenzuo.codes.designpattern.proxy.bystatic.byextends;
 
 /**
  * @author Catch
@@ -7,8 +7,7 @@ package net.wenzuo.codes.designpattern.proxy.dynamic;
 public class Main {
 
     public static void main(String[] args) {
-        DynamicProxy proxy = new DynamicProxy();
-        UserService userService = (UserService) proxy.createProxy(new UserServiceImpl());
+        UserService userService = new UserServiceProxy();
         boolean result = userService.login("admin", "admin");
         System.out.println("login result: " + result);
     }
