@@ -8,10 +8,7 @@ public class SelectionSort implements Sort {
 
     @Override
     public void sort(int[] nums) {
-        if (nums == null) {
-            throw new IllegalArgumentException();
-        }
-        if (nums.length <= 1) {
+        if (nums == null || nums.length <= 1) {
             return;
         }
         for (int i = 0; i < nums.length - 1; i++) {

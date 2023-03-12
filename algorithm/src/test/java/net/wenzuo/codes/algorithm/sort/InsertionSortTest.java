@@ -6,8 +6,9 @@ package net.wenzuo.codes.algorithm.sort;
  */
 class InsertionSortTest extends AbstractSortTest {
 
-    public InsertionSortTest() {
-        sort = new InsertionSort();
+    @Override
+    Sort getSort() {
+        return new InsertionSort();
     }
 
 }

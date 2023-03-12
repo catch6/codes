@@ -12,12 +12,16 @@ import java.util.Random;
  */
 abstract class AbstractSortTest {
 
-    Sort sort;
+    Sort sort = getSort();
+
+    abstract Sort getSort();
 
     @Test
     void sort1() {
-        int[] nums = null;
-        Assertions.assertThrows(IllegalArgumentException.class, () -> sort.sort(nums));
+        int[] arr = null;
+        sort.sort(arr);
+        int[] expect = null;
+        Assertions.assertEquals(expect, arr);
     }
 
     @Test
@@ -62,6 +66,14 @@ abstract class AbstractSortTest {
         int[] expect = Arrays.copyOf(nums, nums.length);
         sort.sort(nums);
         Arrays.sort(expect);
+        Assertions.assertArrayEquals(expect, nums);
+    }
+
+    @Test
+    void sort7() {
+        int[] nums = {3, 1, 2, 3};
+        sort.sort(nums);
+        int[] expect = {1, 2, 3, 3};
         Assertions.assertArrayEquals(expect, nums);
     }
 

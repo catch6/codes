@@ -10,9 +10,9 @@ package net.wenzuo.codes.datastructure.linkedlist;
 public class SinglyLinkedList<E> implements LinkedList<E> {
 
     // 头结点
-    private Node<E> first = new Node<>(null, null);
+    private Node<E> head = new Node<>(null, null);
     // 尾结点方便 addLast
-    private Node<E> last = first;
+    private Node<E> last = head;
     // 实际存储的元素数
     private int size;
 
@@ -34,7 +34,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
     public void add(int index, E element) {
         size++;
         checkIndex(index);
-        Node<E> ptr = first;
+        Node<E> ptr = head;
         for (int i = 0; i < index; i++) {
             ptr = ptr.next;
         }
@@ -47,9 +47,9 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
      */
     @Override
     public void addFirst(E element) {
-        first.next = new Node<>(element, first.next);
-        if (last == first) {
-            last = first.next;
+        head.next = new Node<>(element, head.next);
+        if (last == head) {
+            last = head.next;
         }
         size++;
     }
@@ -75,7 +75,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
     @Override
     public void remove(int index) {
         checkIndex(index);
-        Node<E> ptr = first;
+        Node<E> ptr = head;
         for (int i = 0; i < index; i++) {
             ptr = ptr.next;
         }
@@ -96,9 +96,8 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
     /**
      * 修改指定位置的元素
      */
-
     private Node<E> node(int index) {
-        Node<E> ptr = first.next;
+        Node<E> ptr = head.next;
         // 这里 for 循环只是为了让指针往后走，所以只需要遍历到 index
         // 当遍历结束意味着 i==index
         for (int i = 0; i < index; i++) {
@@ -121,7 +120,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
      */
     @Override
     public E getFirst() {
-        return first.next == null ? null : first.next.item;
+        return head.next == null ? null : head.next.item;
     }
 
     /**
@@ -129,7 +128,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
      */
     @Override
     public E getLast() {
-        return last == first ? null : last.item;
+        return last == head ? null : last.item;
     }
 
     /**
@@ -137,7 +136,7 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
      */
     @Override
     public int indexOf(E element) {
-        Node<E> ptr = first.next;
+        Node<E> ptr = head.next;
         if (element == null) {
             for (int i = 0; i < size; i++) {
                 if (ptr.item == null) {
@@ -166,7 +165,18 @@ public class SinglyLinkedList<E> implements LinkedList<E> {
 
     @Override
     public void reverse() {
-
+        Node<E> dummy = head;
+        Node<E> prev = head;
+        Node<E> curr = prev.next;
+        while (curr != null) {
+            Node<E> next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        dummy.next.next = null;
+        dummy.next = prev;
+        head = dummy;
     }
 
     @Override

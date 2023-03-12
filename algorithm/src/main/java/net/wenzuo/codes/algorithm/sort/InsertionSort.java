@@ -4,13 +4,11 @@ package net.wenzuo.codes.algorithm.sort;
  * @author Catch
  * @since 2022-06-20
  */
-public class InsertionSort implements Sort{
+public class InsertionSort implements Sort {
+
     @Override
     public void sort(int[] nums) {
-        if (nums == null) {
-            throw new IllegalArgumentException();
-        }
-        if (nums.length <= 1) {
+        if (nums == null || nums.length <= 1) {
             return;
         }
         // 从第二个元素开始,默认第一个元素是有序的
@@ -28,4 +26,5 @@ public class InsertionSort implements Sort{
             nums[j + 1] = value;
         }
     }
+
 }

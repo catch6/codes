@@ -8,10 +8,7 @@ public class BubbleSort implements Sort {
 
     @Override
     public void sort(int[] nums) {
-        if (nums == null) {
-            throw new IllegalArgumentException();
-        }
-        if (nums.length <= 1) {
+        if (nums == null || nums.length <= 1) {
             return;
         }
         // 是否发生交换，发生即说明当前还没有完全有序，需要继续排序
@@ -33,4 +30,5 @@ public class BubbleSort implements Sort {
             len--;
         }
     }
+
 }

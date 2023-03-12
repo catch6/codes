@@ -6,8 +6,9 @@ package net.wenzuo.codes.algorithm.sort;
  */
 class BubbleSortTest extends AbstractSortTest {
 
-    public BubbleSortTest() {
-        sort = new BubbleSort();
+    @Override
+    Sort getSort() {
+        return new BubbleSort();
     }
 
 }
