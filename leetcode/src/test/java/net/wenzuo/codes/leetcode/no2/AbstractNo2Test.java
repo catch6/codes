@@ -5,17 +5,19 @@ import org.junit.jupiter.api.Test;
 
 /**
  * @author Catch
- * @since 2022-04-26
+ * @since 2023-03-13
  */
-class No2Test {
+abstract class AbstractNo2Test {
 
-    private final No2 no2 = new No2();
+    abstract AbstractNo2 getAbstractNo2();
+
+    AbstractNo2 abstractNo2 = getAbstractNo2();
 
     @Test
     void addTwoNumbers1() {
         ListNode l1 = getListNode(2, 4, 3);
         ListNode l2 = getListNode(5, 6, 4);
-        ListNode result = no2.addTwoNumbers(l1, l2);
+        ListNode result = abstractNo2.addTwoNumbers(l1, l2);
         Assertions.assertTrue(equals(result, 7, 0, 8));
     }
 
@@ -23,7 +25,7 @@ class No2Test {
     void addTwoNumbers2() {
         ListNode l1 = getListNode(0);
         ListNode l2 = getListNode(0);
-        ListNode result = no2.addTwoNumbers(l1, l2);
+        ListNode result = abstractNo2.addTwoNumbers(l1, l2);
         Assertions.assertTrue(equals(result, 0));
     }
 
@@ -31,7 +33,7 @@ class No2Test {
     void addTwoNumbers3() {
         ListNode l1 = getListNode(9, 9, 9, 9, 9, 9, 9);
         ListNode l2 = getListNode(9, 9, 9, 9);
-        ListNode result = no2.addTwoNumbers(l1, l2);
+        ListNode result = abstractNo2.addTwoNumbers(l1, l2);
         Assertions.assertTrue(equals(result, 8, 9, 9, 9, 0, 0, 0, 1));
     }
 

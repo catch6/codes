@@ -24,6 +24,7 @@ public class No4 {
         }
         // 如果 nums1 空了，就取 nums2 的第 k 个元素，要算上偏移值 start2
         if (len1 == 0) {
+            // 取第k个元素,需要减去1,得到下标
             return nums2[start2 + k - 1];
         }
         // 如果 nums1 和 nums2 都不空，k 最终都会成为 1，即取第 1 小的值，也就是两个数中的最小值

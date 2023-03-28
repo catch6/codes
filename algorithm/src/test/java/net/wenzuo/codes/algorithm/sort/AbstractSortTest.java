@@ -12,9 +12,9 @@ import java.util.Random;
  */
 abstract class AbstractSortTest {
 
-    Sort sort = getSort();
+    AbstractSort sort = getSort();
 
-    abstract Sort getSort();
+    abstract AbstractSort getSort();
 
     @Test
     void sort1() {
@@ -74,6 +74,14 @@ abstract class AbstractSortTest {
         int[] nums = {3, 1, 2, 3};
         sort.sort(nums);
         int[] expect = {1, 2, 3, 3};
+        Assertions.assertArrayEquals(expect, nums);
+    }
+
+    @Test
+    void sort8() {
+        int[] nums = {3, 2, 1, 5, 6, 4};
+        sort.sort(nums);
+        int[] expect = {1, 2, 3, 4, 5, 6};
         Assertions.assertArrayEquals(expect, nums);
     }
 

@@ -11,12 +11,14 @@ import java.util.Arrays;
  */
 abstract class AbstractNo1Test {
 
-    No1 no1;
+    abstract AbstractNo1 getAbstractNo1();
+
+    AbstractNo1 abstractNo1 = getAbstractNo1();
 
     @Test
     void twoSum1() {
         int[] arr = {2, 7, 11, 15};
-        int[] result = no1.twoSum(arr, 9);
+        int[] result = abstractNo1.twoSum(arr, 9);
         Arrays.sort(result);
         Assertions.assertArrayEquals(new int[]{0, 1}, result);
     }
@@ -24,7 +26,7 @@ abstract class AbstractNo1Test {
     @Test
     void twoSum2() {
         int[] arr = {3, 2, 4};
-        int[] result = no1.twoSum(arr, 6);
+        int[] result = abstractNo1.twoSum(arr, 6);
         Arrays.sort(result);
         Assertions.assertArrayEquals(new int[]{1, 2}, result);
     }
@@ -32,7 +34,7 @@ abstract class AbstractNo1Test {
     @Test
     void twoSum3() {
         int[] arr = {3, 3};
-        int[] result = no1.twoSum(arr, 6);
+        int[] result = abstractNo1.twoSum(arr, 6);
         Arrays.sort(result);
         Assertions.assertArrayEquals(new int[]{0, 1}, result);
     }

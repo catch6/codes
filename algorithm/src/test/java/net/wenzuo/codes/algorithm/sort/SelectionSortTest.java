@@ -7,7 +7,7 @@ package net.wenzuo.codes.algorithm.sort;
 class SelectionSortTest extends AbstractSortTest {
 
     @Override
-    Sort getSort() {
+    AbstractSort getSort() {
         return new SelectionSort();
     }
 

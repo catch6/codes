@@ -4,7 +4,7 @@ package net.wenzuo.codes.algorithm.sort;
  * @author Catch
  * @since 2022-06-20
  */
-public class BubbleSort implements Sort {
+public class BubbleSort extends AbstractSort {
 
     @Override
     public void sort(int[] nums) {

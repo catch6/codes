@@ -9,7 +9,7 @@ package net.wenzuo.codes.algorithm.sort;
  * @author Catch
  * @since 2023-03-10
  */
-public class QuickSort implements Sort {
+public class QuickSort extends AbstractSort {
 
     @Override
     public void sort(int[] arr) {
@@ -20,8 +20,8 @@ public class QuickSort implements Sort {
     }
 
     private void sort(int[] arr, int low, int high) {
-        int m = low + (high - low) / 2;
-        int pivot = arr[m];
+        int middle = low + (high - low) / 2;
+        int pivot = arr[middle];
         int i = low, j = high;
         while (i <= j) {
             while (arr[i] < pivot) {

@@ -9,7 +9,7 @@ import java.util.Map;
  * @author Catch
  * @since 2022-04-26
  */
-public class No1ByHashMap implements No1 {
+public class No1OfHashMap extends AbstractNo1 {
 
     @Override
     public int[] twoSum(int[] nums, int target) {

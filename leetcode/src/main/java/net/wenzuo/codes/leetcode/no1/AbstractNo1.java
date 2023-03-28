@@ -7,8 +7,8 @@ package net.wenzuo.codes.leetcode.no1;
  * @author Catch
  * @since 2022-12-03
  */
-public interface No1 {
+public abstract class AbstractNo1 {
 
-    int[] twoSum(int[] nums, int target);
+    abstract int[] twoSum(int[] nums, int target);
 
 }

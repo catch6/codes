@@ -4,10 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 3. 无重复字符的最长子串
+ * https://leetcode.cn/problems/longest-substring-without-repeating-characters/
+ *
  * @author Catch
  * @since 2023-03-09
  */
-public class No3BySlidingWindow implements No3 {
+public class No3OfSlidingWindow extends AbstractNo3 {
 
     @Override
     public int lengthOfLongestSubstring(String s) {

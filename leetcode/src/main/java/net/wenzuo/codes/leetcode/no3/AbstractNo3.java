@@ -7,8 +7,8 @@ package net.wenzuo.codes.leetcode.no3;
  * @author Catch
  * @since 2022-04-26
  */
-public interface No3 {
+public abstract class AbstractNo3 {
 
-    int lengthOfLongestSubstring(String s);
+    abstract int lengthOfLongestSubstring(String s);
 
 }

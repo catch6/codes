@@ -4,7 +4,7 @@ package net.wenzuo.codes.algorithm.sort;
  * @author Catch
  * @since 2022-06-22
  */
-public class SelectionSort implements Sort {
+public class SelectionSort extends AbstractSort {
 
     @Override
     public void sort(int[] nums) {
