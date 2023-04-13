@@ -7,8 +7,8 @@ package net.wenzuo.codes.leetcode.no206;
  * @author Catch
  * @since 2023-03-12
  */
-public interface No206 {
+public abstract class AbstractNo206 {
 
-    ListNode reverseList(ListNode head);
+    abstract ListNode reverseList(ListNode head);
 
 }

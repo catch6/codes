@@ -6,7 +6,7 @@ package net.wenzuo.codes.leetcode.no206;
  * @author Catch
  * @since 2023-03-12
  */
-public class No206ByRecursion implements No206 {
+public class No206OfRecursion extends AbstractNo206 {
 
     @Override
     public ListNode reverseList(ListNode head) {

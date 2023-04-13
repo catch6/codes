@@ -8,9 +8,9 @@ import org.junit.jupiter.api.Test;
  */
 abstract class AbstractNo206Test {
 
-    No206 no206 = getInstance();
+    AbstractNo206 no206 = getInstance();
 
-    abstract No206 getInstance();
+    abstract AbstractNo206 getInstance();
 
     @Test
     void test1() {
