@@ -8,12 +8,12 @@ import java.util.Random;
  * @author Catch
  * @since 2023-03-13
  */
-public class No215QuickSelect extends AbstractNo215 {
+class No215QuickSelect extends AbstractNo215 {
 
     private final Random random = new Random();
 
     @Override
-    public int findKthLargest(int[] nums, int k) {
+    int findKthLargest(int[] nums, int k) {
         int target = nums.length - k;
         int l = 0, r = nums.length - 1;
         while (true) {

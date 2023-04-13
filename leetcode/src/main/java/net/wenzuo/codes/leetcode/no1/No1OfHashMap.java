@@ -9,10 +9,10 @@ import java.util.Map;
  * @author Catch
  * @since 2022-04-26
  */
-public class No1OfHashMap extends AbstractNo1 {
+class No1OfHashMap extends AbstractNo1 {
 
     @Override
-    public int[] twoSum(int[] nums, int target) {
+    int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         Integer another;
         for (int i = 0; i < nums.length; i++) {

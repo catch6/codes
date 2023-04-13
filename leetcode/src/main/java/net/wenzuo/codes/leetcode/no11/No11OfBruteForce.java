@@ -4,10 +4,10 @@ package net.wenzuo.codes.leetcode.no11;
  * @author Catch
  * @since 2023-02-10
  */
-public class No11BruteForce implements No11 {
+class No11OfBruteForce extends AbstractNo11 {
 
     @Override
-    public int maxArea(int[] height) {
+    int maxArea(int[] height) {
         int max = 0;
         int cur;
         for (int i = 0; i < height.length; i++) {

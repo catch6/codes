@@ -6,10 +6,10 @@ import java.util.*;
  * @author Catch
  * @since 2023-03-12
  */
-public class No103ByQueue implements No103 {
+class No103OfQueue extends AbstractNo103 {
 
     @Override
-    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+    List<List<Integer>> zigzagLevelOrder(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         if (root == null) {
             return res;

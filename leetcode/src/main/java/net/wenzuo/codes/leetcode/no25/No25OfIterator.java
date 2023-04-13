@@ -4,10 +4,10 @@ package net.wenzuo.codes.leetcode.no25;
  * @author Catch
  * @since 2023-03-09
  */
-public class No25ByIterator implements No25 {
+class No25OfIterator extends AbstractNo25 {
 
     @Override
-    public ListNode reverseKGroup(ListNode head, int k) {
+    ListNode reverseKGroup(ListNode head, int k) {
         if (head.next == null || k == 1) {
             return head;
         }

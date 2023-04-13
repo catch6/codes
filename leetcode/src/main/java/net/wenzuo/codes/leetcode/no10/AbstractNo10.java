@@ -7,8 +7,8 @@ package net.wenzuo.codes.leetcode.no10;
  * @author Catch
  * @since 2023-02-10
  */
-public interface No10 {
+abstract class AbstractNo10 {
 
-    boolean isMatch(String s, String p);
+    abstract boolean isMatch(String s, String p);
 
 }

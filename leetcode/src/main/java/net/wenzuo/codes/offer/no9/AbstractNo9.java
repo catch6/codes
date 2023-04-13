@@ -7,10 +7,10 @@ package net.wenzuo.codes.offer.no9;
  * @author Catch
  * @since 2023-03-19
  */
-public abstract class AbstractNo9 {
+abstract class AbstractNo9 {
 
-    public abstract void appendTail(int value);
+    abstract void appendTail(int value);
 
-    public abstract int deleteHead();
+    abstract int deleteHead();
 
 }

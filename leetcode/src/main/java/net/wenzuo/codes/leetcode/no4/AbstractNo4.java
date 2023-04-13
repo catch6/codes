@@ -15,7 +15,7 @@ package net.wenzuo.codes.leetcode.no4;
  * @author Catch
  * @since 2023-03-28
  */
-public abstract class AbstractNo4 {
+abstract class AbstractNo4 {
 
     abstract double findMedianSortedArrays(int[] nums1, int[] nums2);
 

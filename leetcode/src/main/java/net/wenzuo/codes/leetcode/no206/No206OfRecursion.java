@@ -6,10 +6,10 @@ package net.wenzuo.codes.leetcode.no206;
  * @author Catch
  * @since 2023-03-12
  */
-public class No206OfRecursion extends AbstractNo206 {
+class No206OfRecursion extends AbstractNo206 {
 
     @Override
-    public ListNode reverseList(ListNode head) {
+    ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }

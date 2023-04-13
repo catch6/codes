@@ -9,13 +9,13 @@ import java.util.HashMap;
  * @author Catch
  * @since 2023-03-11
  */
-public class LRUCache extends HashMap<Integer, LRUCache.Node> {
+class LRUCache extends HashMap<Integer, LRUCache.Node> {
 
     private int capacity;
     private Node head;
     private Node tail;
 
-    public LRUCache(int capacity) {
+    LRUCache(int capacity) {
         super(capacity);
         this.capacity = capacity;
         head = new Node(0, 0);
@@ -24,7 +24,7 @@ public class LRUCache extends HashMap<Integer, LRUCache.Node> {
         tail.prev = head;
     }
 
-    public int get(int key) {
+    int get(int key) {
         Node node = super.get(key);
         if (node == null) {
             return -1;
@@ -34,7 +34,7 @@ public class LRUCache extends HashMap<Integer, LRUCache.Node> {
         return node.value;
     }
 
-    public void put(int key, int value) {
+    void put(int key, int value) {
         if (super.containsKey(key)) {
             Node node = super.get(key);
             node.value = value;
@@ -64,14 +64,14 @@ public class LRUCache extends HashMap<Integer, LRUCache.Node> {
         tail.prev = node;
     }
 
-    public static class Node {
+    static class Node {
 
         private int key;
         private int value;
         private Node prev;
         private Node next;
 
-        public Node(int key, int value) {
+        Node(int key, int value) {
             this.key = key;
             this.value = value;
         }

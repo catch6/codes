@@ -7,10 +7,10 @@ package net.wenzuo.codes.leetcode.no2;
  * @author Catch
  * @since 2022-04-26
  */
-public class No2OfBasic extends AbstractNo2 {
+class No2OfBasic extends AbstractNo2 {
 
     @Override
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = null;
         ListNode tail = null;
         int carry = 0;

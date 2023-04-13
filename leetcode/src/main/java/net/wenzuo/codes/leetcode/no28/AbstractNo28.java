@@ -7,7 +7,7 @@ package net.wenzuo.codes.leetcode.no28;
  * @author Catch
  * @since 2023-04-13
  */
-public abstract class AbstractNo28 {
+abstract class AbstractNo28 {
 
     abstract int strStr(String haystack, String needle);
 

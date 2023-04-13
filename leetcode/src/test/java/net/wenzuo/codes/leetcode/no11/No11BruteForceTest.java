@@ -7,7 +7,7 @@ package net.wenzuo.codes.leetcode.no11;
 class No11BruteForceTest extends AbstractNo11Test {
 
     public No11BruteForceTest() {
-        no11 = new No11BruteForce();
+        no11 = new No11OfBruteForce();
     }
 
 }

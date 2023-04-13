@@ -7,7 +7,7 @@ package net.wenzuo.codes.leetcode.no11;
 class No11DoublePointerTest extends AbstractNo11Test {
 
     public No11DoublePointerTest() {
-        no11 = new No11DoublePointer();
+        no11 = new No11OfDoublePointer();
     }
 
 }

@@ -9,9 +9,9 @@ import java.util.Arrays;
  * @author Catch
  * @since 2022-05-03
  */
-public class No6 {
+class No6 {
 
-    public String convert(String s, int numRows) {
+    String convert(String s, int numRows) {
         if (numRows == 1 || numRows >= s.length()) {
             return s;
         }

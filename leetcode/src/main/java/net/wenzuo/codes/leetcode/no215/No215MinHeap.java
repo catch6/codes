@@ -9,10 +9,10 @@ import java.util.PriorityQueue;
  * @author Catch
  * @since 2023-03-12
  */
-public class No215MinHeap extends AbstractNo215 {
+class No215MinHeap extends AbstractNo215 {
 
     @Override
-    public int findKthLargest(int[] nums, int k) {
+    int findKthLargest(int[] nums, int k) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         for (int i : nums) {
             if (minHeap.size() < k) {

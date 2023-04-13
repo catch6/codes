@@ -7,9 +7,9 @@ package net.wenzuo.codes.leetcode.no7;
  * @author Catch
  * @since 2022-05-05
  */
-public class No7 {
+class No7 {
 
-    public int reverse(int x) {
+    int reverse(int x) {
         int result = 0;
         while (x != 0) {
             // 校验是否即将溢出

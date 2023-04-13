@@ -7,9 +7,9 @@ package net.wenzuo.codes.leetcode.no4;
  * @author Catch
  * @since 2022-04-27
  */
-public class No4 {
+class No4 {
 
-    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+    double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int k1 = (nums1.length + nums2.length + 1) / 2;
         int k2 = (nums1.length + nums2.length + 2) / 2;
         return 0.5 * (getKth(nums1, 0, nums1.length - 1, nums2, 0, nums2.length - 1, k1) + getKth(nums1, 0, nums1.length - 1, nums2, 0, nums2.length - 1, k2));

@@ -7,8 +7,8 @@ package net.wenzuo.codes.leetcode.no25;
  * @author Catch
  * @since 2023-03-09
  */
-public interface No25 {
+abstract class AbstractNo25 {
 
-    ListNode reverseKGroup(ListNode head, int k);
+    abstract ListNode reverseKGroup(ListNode head, int k);
 
 }

@@ -7,10 +7,10 @@ package net.wenzuo.codes.leetcode.no200;
  * @author Catch
  * @since 2023-03-13
  */
-public class No200DFS extends AbstractNo200 {
+class No200DFS extends AbstractNo200 {
 
     @Override
-    public int numIslands(char[][] grid) {
+    int numIslands(char[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
         int count = 0;

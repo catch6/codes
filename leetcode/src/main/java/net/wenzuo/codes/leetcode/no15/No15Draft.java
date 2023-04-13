@@ -9,10 +9,10 @@ import java.util.List;
  * @author Catch
  * @since 2023-03-12
  */
-public class No15Draft extends AbstractNo15 {
+class No15Draft extends AbstractNo15 {
 
     @Override
-    public List<List<Integer>> threeSum(int[] nums) {
+    List<List<Integer>> threeSum(int[] nums) {
         return null;
     }
 

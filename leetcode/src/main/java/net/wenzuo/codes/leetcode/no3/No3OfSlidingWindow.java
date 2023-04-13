@@ -10,10 +10,10 @@ import java.util.Map;
  * @author Catch
  * @since 2023-03-09
  */
-public class No3OfSlidingWindow extends AbstractNo3 {
+class No3OfSlidingWindow extends AbstractNo3 {
 
     @Override
-    public int lengthOfLongestSubstring(String s) {
+    int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) {
             return 0;
         }

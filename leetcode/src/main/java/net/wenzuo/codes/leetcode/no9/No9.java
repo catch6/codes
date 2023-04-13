@@ -7,9 +7,9 @@ package net.wenzuo.codes.leetcode.no9;
  * @author Catch
  * @since 2022-04-29
  */
-public class No9 {
+class No9 {
 
-    public boolean isPalindrome(int x) {
+    boolean isPalindrome(int x) {
         // 负数或末位是 0 都不可能是回文数
         if (x < 0 || (x % 10 == 0 && x != 0)) {
             return false;

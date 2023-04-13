@@ -7,8 +7,8 @@ package net.wenzuo.codes.leetcode.no11;
  * @author Catch
  * @since 2023-02-10
  */
-public interface No11 {
+abstract class AbstractNo11 {
 
-    int maxArea(int[] height);
+    abstract int maxArea(int[] height);
 
 }

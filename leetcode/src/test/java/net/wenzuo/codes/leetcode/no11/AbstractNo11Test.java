@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  */
 abstract class AbstractNo11Test {
 
-    No11 no11;
+    AbstractNo11 no11;
 
     @Test
     void maxArea1() {

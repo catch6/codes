@@ -4,7 +4,7 @@ package net.wenzuo.codes.leetcode.no28;
  * @author Catch
  * @since 2023-04-13
  */
-public class No28OfKmp extends AbstractNo28 {
+class No28OfKmp extends AbstractNo28 {
 
     @Override
     int strStr(String haystack, String needle) {

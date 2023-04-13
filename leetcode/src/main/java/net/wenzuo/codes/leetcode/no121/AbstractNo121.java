@@ -7,7 +7,7 @@ package net.wenzuo.codes.leetcode.no121;
  * @author Catch
  * @since 2023-03-13
  */
-public abstract class AbstractNo121 {
+abstract class AbstractNo121 {
 
     abstract int maxProfit(int[] prices);
 

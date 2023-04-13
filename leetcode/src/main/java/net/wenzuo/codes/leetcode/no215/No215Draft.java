@@ -7,10 +7,10 @@ package net.wenzuo.codes.leetcode.no215;
  * @author Catch
  * @since 2023-03-12
  */
-public class No215Draft extends AbstractNo215 {
+class No215Draft extends AbstractNo215 {
 
     @Override
-    public int findKthLargest(int[] nums, int k) {
+    int findKthLargest(int[] nums, int k) {
         return 0;
     }
 

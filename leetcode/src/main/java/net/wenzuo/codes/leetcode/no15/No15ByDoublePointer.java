@@ -17,10 +17,10 @@ import java.util.List;
  * @author Catch
  * @since 2023-03-12
  */
-public class No15ByDoublePointer extends AbstractNo15 {
+class No15ByDoublePointer extends AbstractNo15 {
 
     @Override
-    public List<List<Integer>> threeSum(int[] nums) {
+    List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
         int len = nums.length;

@@ -6,8 +6,8 @@ import java.util.List;
  * @author Catch
  * @since 2023-03-12
  */
-public interface No103 {
+abstract class AbstractNo103 {
 
-    List<List<Integer>> zigzagLevelOrder(TreeNode root);
+    abstract List<List<Integer>> zigzagLevelOrder(TreeNode root);
 
 }

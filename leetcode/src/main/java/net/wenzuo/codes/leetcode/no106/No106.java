@@ -7,9 +7,9 @@ package net.wenzuo.codes.leetcode.no106;
  * @author Catch
  * @since 2022-11-16
  */
-public class No106 {
+class No106 {
 
-    public TreeNode buildTree(int[] inorder, int[] postorder) {
+    TreeNode buildTree(int[] inorder, int[] postorder) {
         return null;
     }
 

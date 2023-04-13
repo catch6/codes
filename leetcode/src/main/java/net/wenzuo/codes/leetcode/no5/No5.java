@@ -7,11 +7,11 @@ package net.wenzuo.codes.leetcode.no5;
  * @author Catch
  * @since 2022-04-29
  */
-public class No5 {
+class No5 {
 
     // 回文串一定是对称的，所以我们可以每次循环选择一个中心，
     // 进行左右扩展，判断左右字符是否相等即可
-    public String longestPalindrome(String s) {
+    String longestPalindrome(String s) {
         int start = 0;
         int end = 0;
         for (int i = 0; i < s.length(); i++) {

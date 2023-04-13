@@ -4,7 +4,7 @@ package net.wenzuo.codes.leetcode.no103;
  * @author Catch
  * @since 2023-03-12
  */
-public class TreeNode {
+class TreeNode {
 
     int val;
     TreeNode left;

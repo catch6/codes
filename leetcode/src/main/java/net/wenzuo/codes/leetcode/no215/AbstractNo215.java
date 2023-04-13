@@ -7,7 +7,7 @@ package net.wenzuo.codes.leetcode.no215;
  * @author Catch
  * @since 2023-03-12
  */
-public abstract class AbstractNo215 {
+abstract class AbstractNo215 {
 
     abstract int findKthLargest(int[] nums, int k);
 

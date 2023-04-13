@@ -9,7 +9,7 @@ import java.util.List;
  * @author Catch
  * @since 2022-04-26
  */
-public abstract class AbstractNo15 {
+abstract class AbstractNo15 {
 
     abstract List<List<Integer>> threeSum(int[] nums);
 

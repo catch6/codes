@@ -7,6 +7,6 @@ package net.wenzuo.codes.leetcode.no8;
  * @author Catch
  * @since 2022-06-13
  */
-public class No8 {
+class No8 {
 
 }

@@ -7,7 +7,7 @@ package net.wenzuo.codes.leetcode.no2;
  * @author Catch
  * @since 2023-03-13
  */
-public abstract class AbstractNo2 {
+abstract class AbstractNo2 {
 
     abstract ListNode addTwoNumbers(ListNode l1, ListNode l2);
 
